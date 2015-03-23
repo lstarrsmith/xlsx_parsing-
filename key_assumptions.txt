@@ -1,0 +1,14 @@
+*** Store name, code, location doesn't matter, for now
+
+*** concerned about product type (beverages, condiments, etc.)
+
+two inputs: filter: profit made or best performing
+
+	profit made: (default: total profit ())
+
+	best performing: (default: "all products"; options for "product", "product type", "month"), find top 10 highest total sales 
+
+
+** File upload restriction occurs if:
+	* file is not .xlsx
+	* file name string has already been uploaded
