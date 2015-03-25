@@ -1,6 +1,6 @@
 # Sales Dashboard for Chain Stores
 
-This is a simple web application that consumes .xlsx sales reports, one at a time, and visualizes the aggregate data for all of the reports. It's built with Ruby and includes elements of OOP - and it has a functioning, nearly responsive HTML/ CSS/ JS front end. Check out the screenshots (/screenshots) and video file of the app in action (/screenshots/video_of_application/kampala_sales_dash.mov)
+This is a simple web application that consumes .xlsx sales reports, one at a time, and visualizes the aggregate data for all of the reports. It's built with Ruby and includes elements of OOP - and it has a functioning, nearly responsive HTML/ CSS/ JS front end. Check out the screenshots (/screenshots) and video file of the app in action (/screenshots/chain_stores_demo.gif)
 
 ## Structure of the Code
 
@@ -44,7 +44,6 @@ CSS: used reset.css to reduce browswer inconsistencies
 
 
 * I usually prefer to employ a testing engine like Minitest for Ruby projects, but I was under a bit of a time crunch and didn't have the bandwidth to allow for proper testing design.
-* Apologies for the lack of a Git history; I'm incredibly comfortable using Git for team projects but it wasn't necessary to push incremental updates as I was using another service to save and branch locally.
 * I explored 3-4 other .xlsx parsers. This gave me the best interface and it made the File.io process nearly seamless
 * Check out the Report class in /public/ruby_classes/report.rb -> Much refactoring left to do but it's pretty powerful
 * I'd like to spend more time refactoring the server file, and hopefully creating more classes (before I build out more features!) to handle data transfer/ calculation on the server side
