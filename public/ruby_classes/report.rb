@@ -1,6 +1,11 @@
+
+#### Caveat this Class with the fact that it's dependent on the file structure. For later versions we will need to create a class to parse the file and find where certain pieces of information exist. Right now, this class is set up to match the example file rows exactly. Files that are formatted differently will not read correctly. 
+
+
 class Report
 	def initialize(report_xlsx)
-		@report = Roo::Excelx.new(report_xlsx)
+		# sourced from: http://stackoverflow.com/questions/15460746/how-to-read-an-xlsx-or-xls-file-from-a-url for reading .xlsx properly with Roo
+		@report = Roo::Excelx.new(report_xlsx, nil, :ignore)
 	end
 
 	def raw_output
@@ -11,6 +16,7 @@ class Report
 		return @report.row(5)[0].mon
 	end
 
+	# create a hash with all the products listed out
 	def create_product_type_hash
 		@product_type = Hash.new
 
@@ -21,6 +27,7 @@ class Report
 		end 
 	end
 
+	#calculate the total units sold for each month
 	def month_sum
 		sum = 0
 		((@report.first_row+6)..@report.last_row).each do |row_num|
@@ -32,6 +39,7 @@ class Report
 
 	end
 
+	# calculate the total profit for each month
 	def month_profit
 		profit = 0
 		((@report.first_row+6)..@report.last_row).each do |row_num|
@@ -80,12 +88,8 @@ class Report
 		end
 		return product_data
 	end
-
-
-
-	
-
 end
+
 
 
 

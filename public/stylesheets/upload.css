@@ -1,0 +1,38 @@
+/*-----------------------------------------------------------------------Successful upload page---------------------------------------------------------------------------------*/
+	body {
+		background-color: #09282F;
+	}
+
+	div {
+		margin-top: 100px;
+		text-align: center;
+		font-size: 2em;
+		color: white;
+	}
+
+	#successful_upload {
+		color: #5FBCC8;
+	}
+
+
+			a:link {
+		    color: white;
+		}
+
+		/* visited link */
+		a:visited {
+		    color: white;
+		}
+
+		/* mouse over link */
+		a:hover {
+		    color: white;
+		}
+
+		/* selected link */
+		a:active {
+		    color: white;
+		}
+
+
+	
